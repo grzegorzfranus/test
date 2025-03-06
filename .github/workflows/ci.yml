@@ -34,11 +34,11 @@ jobs:
     strategy:
       max-parallel: 4
       matrix:
-        distro:
-          - ubuntu2004
-          - ubuntu2204
         python-version:
           - 3.12
+        scenario:
+          - default
+
     steps:
       - name: Check out the codebase
         uses: actions/checkout@v4
@@ -54,8 +54,7 @@ jobs:
             docker testinfra
 
       - name: Run molecule test
-        run: molecule test
+        run: molecule test --scenario-name ${{ matrix.scenario }}
         env:
           PY_COLORS: '1'
           ANSIBLE_FORCE_COLOR: '1'
-          MOLECULE_DISTRO: ${{ matrix.distro }}
