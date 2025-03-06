@@ -1,5 +1,5 @@
 ---
-- name: Converge
+- name: molecule | Converge
   hosts: all
   tasks:
     - name: Include test role
