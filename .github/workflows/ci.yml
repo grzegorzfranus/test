@@ -1,55 +1,47 @@
----
 name: CI
 
 on:
-    push:
-      branches:
-        - main
-    pull_request:
-      branches:
-        - main
-        - "feature/*"
-        - "release/*"
-        - "bugfix/*"
-        - "hotfix/*"
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+      - "feature/*"
+      - "release/*"
+      - "bugfix/*"
+      - "hotfix/*"
 
 jobs:
   lint:
     name: Lint code
     runs-on: ubuntu-latest
-
     steps:
       - name: Check out the codebase
         uses: actions/checkout@v4
-
       - name: Set up Python 3
         uses: actions/setup-python@v5
         with:
           python-version: '3.x'
-
       - name: Install dependencies
         run: |
           pip3 install yamllint
-
       - name: Lint code
         run: |
           yamllint .
-          
   test:
     runs-on: ubuntu-latest
     steps:
       - name: Check out the codebase
         uses: actions/checkout@v4
-      
       - name: Set up Python 3
         uses: actions/setup-python@v5
         with:
           python-version: '3.x'
-          
       - name: Install dependencies
         run: |
-          pip3 install ansible molecule molecule-plugins[docker] docker testinfra
-        
+          pip3 install ansible molecule molecule-plugins[docker] \
+            docker testinfra
       - name: Run molecule test
         run: molecule test
         env:
