@@ -11,23 +11,20 @@ jobs:
   test:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
+      - name: Check out the codebase
+        uses: actions/checkout@v4
       
-      - name: Set up Python
-        uses: actions/setup-python@v4
+      - name: Set up Python 3
+        uses: actions/setup-python@v5
         with:
-          python-version: '3.9'
+          python-version: '3.x'
           
       - name: Install dependencies
         run: |
-          python -m pip install --upgrade pip
-          pip install yamllint ansible-lint molecule molecule-docker docker
-          
-    #   - name: Run yamllint
-    #     run: yamllint .
-        
-    #   - name: Run ansible-lint
-    #     run: ansible-lint
+          pip3 install ansible molecule molecule-plugins[docker] docker
         
       - name: Run molecule test
         run: molecule test
+        env:
+          PY_COLORS: '1'
+          ANSIBLE_FORCE_COLOR: '1'
