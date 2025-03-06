@@ -26,9 +26,25 @@
         enabled: true
       check_mode: true
 
+    - name: Check chrony configuration file exists
+      ansible.builtin.stat:
+        path: /etc/chrony/chrony.conf
+      register: debian_conf
+      when: ansible_os_family == "Debian"
+
+    - name: Check chrony configuration file exists (alternative path)
+      ansible.builtin.stat:
+        path: /etc/chrony.conf
+      register: alt_conf
+      when: ansible_os_family != "Debian"
+
+    - name: Set configuration file path
+      ansible.builtin.set_fact:
+        chrony_conf_path: "{{ '/etc/chrony/chrony.conf' if ansible_os_family == 'Debian' else '/etc/chrony.conf' }}"
+
     - name: Check chrony configuration
       ansible.builtin.shell: |
-        grep -q "pool {{ chrony_ntp_server }}" /etc/chrony.conf
+        grep -q "pool {{ chrony_ntp_server }}" {{ chrony_conf_path }}
       changed_when: false
       check_mode: true
 

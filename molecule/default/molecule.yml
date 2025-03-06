@@ -22,10 +22,10 @@ platforms:
       - /tmp
       - /run
       - /run/lock
-  
-  - name: ubuntu-2004
-    image: geerlingguy/docker-ubuntu2004-ansible:latest
-    hostname: ubuntu
+
+  - name: debian-12
+    image: geerlingguy/docker-debian12-ansible:latest
+    hostname: debian
     privileged: True
     pre_build_image: True
     override_command: False
