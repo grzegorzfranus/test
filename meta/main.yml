@@ -1,5 +1,7 @@
 ---
 galaxy_info:
+  role_name: test
+  namespace: grzegorzfranus
   author: Your Name
   description: Test Ansible role with testing
   company: Your Company
