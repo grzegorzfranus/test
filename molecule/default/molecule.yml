@@ -26,4 +26,4 @@ provisioner:
     ANSIBLE_ROLES_PATH: ../../
 
 verifier:
-  name: ansible 
+  name: ansible

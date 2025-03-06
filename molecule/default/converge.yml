@@ -4,4 +4,4 @@
   tasks:
     - name: Include test role
       ansible.builtin.include_role:
-        name: ../../test 
+        name: ../../test

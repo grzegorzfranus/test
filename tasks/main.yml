@@ -6,4 +6,4 @@
 
 - name: Another example task
   debug:
-    msg: "Variable value is {{ example_variable }}" 
+    msg: "Variable value is {{ example_variable }}"
