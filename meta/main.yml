@@ -3,7 +3,7 @@ galaxy_info:
   role_name: test
   namespace: grzegorzfranus
   author: Your Name
-  description: Test Ansible role with testing
+  description: Ansible role to install and configure chrony NTP client
   company: Your Company
   license: MIT
   min_ansible_version: "2.9"
@@ -16,8 +16,10 @@ galaxy_info:
       versions:
         - bullseye
   galaxy_tags:
-    - test
-    - testing
+    - chrony
+    - ntp
+    - time
+    - system
     - molecule
 
 dependencies: []

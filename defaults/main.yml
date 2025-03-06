@@ -5,3 +5,5 @@ example_boolean: true
 example_list:
   - item1
   - item2
+chrony_ntp_server: "0.pl.pool.ntp.org"
+chrony_service_name: "chronyd"

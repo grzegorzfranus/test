@@ -1,9 +1,21 @@
 ---
 # Main tasks file for the role
-- name: Example task
-  debug:
-    msg: "This is an example task"
+- name: Install chrony package
+  ansible.builtin.package:
+    name: chrony
+    state: present
 
-- name: Another example task
-  debug:
-    msg: "Variable value is {{ example_variable }}"
+- name: Configure chrony
+  ansible.builtin.template:
+    src: chrony.conf.j2
+    dest: /etc/chrony.conf
+    owner: root
+    group: root
+    mode: '0644'
+  notify: restart chrony
+
+- name: Ensure chrony service is enabled and started
+  ansible.builtin.service:
+    name: "{{ chrony_service_name }}"
+    state: started
+    enabled: true

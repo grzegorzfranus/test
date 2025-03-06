@@ -1,0 +1,11 @@
+# Use Google's public NTP server
+pool {{ chrony_ntp_server }} iburst
+
+# Record the rate at which the system clock gains/losses time
+driftfile /var/lib/chrony/drift
+
+# Allow the client to sync with the NTP server
+allow
+
+# Serve time even if not synchronized to a time source
+local stratum 10 

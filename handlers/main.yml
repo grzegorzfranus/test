@@ -1,5 +1,6 @@
 ---
 # Handlers file for the role
-- name: restart example service
-  debug:
-    msg: "This is an example handler"
+- name: restart chrony
+  ansible.builtin.service:
+    name: "{{ chrony_service_name }}"
+    state: restarted
