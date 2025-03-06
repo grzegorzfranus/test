@@ -48,7 +48,8 @@ provisioner:
       pipelining: true
   env:
     ANSIBLE_FORCE_COLOR: "true"
-    ANSIBLE_ROLES_PATH: ../../
+    ANSIBLE_FILTER_PLUGINS: "${ANSIBLE_FILTER_PLUGINS:-./plugins/filter}"
+    # ANSIBLE_ROLES_PATH: ../../
 
 verifier:
   name: ansible
