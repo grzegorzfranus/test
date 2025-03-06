@@ -29,8 +29,16 @@ jobs:
       - name: Lint code
         run: |
           yamllint .
-  test:
+  molecule:
     runs-on: ubuntu-latest
+    strategy:
+      max-parallel: 4
+      matrix:
+        distro:
+          - ubuntu2004
+          - ubuntu2204
+        python-version:
+          - 3.12
     steps:
       - name: Check out the codebase
         uses: actions/checkout@v4
@@ -50,3 +58,4 @@ jobs:
         env:
           PY_COLORS: '1'
           ANSIBLE_FORCE_COLOR: '1'
+          MOLECULE_DISTRO: ${{ matrix.distro }}
