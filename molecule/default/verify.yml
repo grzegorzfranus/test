@@ -5,7 +5,8 @@
   tasks:
     - name: Set service name based on OS family
       ansible.builtin.set_fact:
-        chrony_service_name: "{{ 'chronyd' if ansible_os_family == 'RedHat' else 'chrony' }}"
+        # chrony_service_name: "{{ 'chronyd' if ansible_os_family == 'RedHat' else 'chrony' }}"
+        chrony_service_name: "chrony"
 
     - name: Check if chrony package is installed
       ansible.builtin.package:
