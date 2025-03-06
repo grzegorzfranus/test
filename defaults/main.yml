@@ -1,0 +1,7 @@
+---
+# Default variables for the role
+example_variable: "default_value"
+example_boolean: true
+example_list:
+  - item1
+  - item2 

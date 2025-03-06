@@ -1,0 +1,9 @@
+---
+# Main tasks file for the role
+- name: Example task
+  debug:
+    msg: "This is an example task"
+
+- name: Another example task
+  debug:
+    msg: "Variable value is {{ example_variable }}" 

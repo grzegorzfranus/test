@@ -1,0 +1,5 @@
+---
+# Handlers file for the role
+- name: restart example service
+  debug:
+    msg: "This is an example handler" 
