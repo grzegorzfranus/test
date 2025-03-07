@@ -19,3 +19,7 @@
     name: "{{ chrony_service_name }}"
     state: started
     enabled: true
+
+- name: Display Linux Distribution
+  debug:
+    msg: "The Linux distribution is {{ ansible_distribution }} {{ ansible_distribution_version }}"
