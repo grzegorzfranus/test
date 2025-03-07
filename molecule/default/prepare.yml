@@ -2,14 +2,16 @@
 - name: molecule | Prepare
   hosts: all
   gather_facts: true
+
   tasks:
-    - name: Update apt cache (Debian/Ubuntu)
+
+    - name: Prepare | Update apt cache (Debian/Ubuntu)
       ansible.builtin.apt:
         update_cache: true
       changed_when: false
       when: ansible_os_family == "Debian"
 
-    - name: Update dnf cache (Rocky/RHEL)
+    - name: Prepare | Update dnf cache (Rocky/RHEL)
       ansible.builtin.dnf:
         update_cache: true
       changed_when: false

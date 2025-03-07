@@ -27,9 +27,9 @@ Chronyd is a daemon for synchronisation of the system clock.
 
 | OS Family | Version | Status |
 |-----------|---------|---------|
-| Ubuntu | 22.04 (Jammy) | [![Ubuntu 22.04](https://img.shields.io/badge/Ubuntu%2022.04-OK-brightgreen.svg)](https://ubuntu.com) |
-| Debian | 12 (Bookworm) | [![Debian 12](https://img.shields.io/badge/Debian%2012-OK-brightgreen.svg)](https://www.debian.org) |
-| Rocky Linux | 9 | [![Rocky Linux 9](https://img.shields.io/badge/Rocky%20Linux%209-OK-brightgreen.svg)](https://rockylinux.org) |
+| Ubuntu | 22.04 (Jammy) | [![OK](https://img.shields.io/badge/OK-brightgreen.svg)](https://ubuntu.com) |
+| Debian | 12 (Bookworm) | [![OK](https://img.shields.io/badge/OK-brightgreen.svg)](https://www.debian.org) |
+| Rocky Linux | 9 | [![OK](https://img.shields.io/badge/OK-brightgreen.svg)](https://rockylinux.org) |
 
 ### Root access
 
