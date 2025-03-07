@@ -27,9 +27,9 @@ Chronyd is a daemon for synchronisation of the system clock.
 
 | OS Family | Version | Status |
 |-----------|---------|---------|
-| Ubuntu | 22.04 (Jammy) | [![OK](https://img.shields.io/badge/OK-brightgreen.svg)](https://ubuntu.com) |
-| Debian | 12 (Bookworm) | [![OK](https://img.shields.io/badge/OK-brightgreen.svg)](https://www.debian.org) |
-| Rocky Linux | 9 | [![OK](https://img.shields.io/badge/OK-brightgreen.svg)](https://rockylinux.org) |
+| Ubuntu | 22.04 (Jammy) | ![✓](https://img.shields.io/badge/✓-brightgreen.svg) |
+| Debian | 12 (Bookworm) | ![✓](https://img.shields.io/badge/✓-brightgreen.svg) |
+| Rocky Linux | 9 | ![✓](https://img.shields.io/badge/✓-brightgreen.svg) |
 
 ### Root access
 
@@ -42,7 +42,7 @@ Ansible >= 2.15
 
 ### Python version
 
-Python >= 3.9
+Python >= 3.11
 
 ### Setup module
 The role uses facts gathered by Ansible on the remote host. If you disable the Setup module in your playbook, the role will not work properly.

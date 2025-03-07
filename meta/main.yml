@@ -6,7 +6,7 @@ galaxy_info:
   description: Ansible role to install and configure chrony NTP client
   company: Your Company
   license: MIT
-  min_ansible_version: "2.9"
+  min_ansible_version: "2.15"
   platforms:
     - name: Ubuntu
       versions:
