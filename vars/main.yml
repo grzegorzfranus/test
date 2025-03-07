@@ -1,0 +1,21 @@
+---
+# ================================================================
+# Ansible Variables - Shared Variables
+# ================================================================
+# This file defines default Chrony NTP service settings
+# and related parameters.
+#
+# Sections:
+#   1. General Settings
+#   2. Logrotate Settings
+# ================================================================
+
+# ------------------------------------------------
+# 1. General Settings
+# ------------------------------------------------
+chrony_package_name: "chrony"
+
+# ------------------------------------------------
+# 2. Logrotate Settings
+# ------------------------------------------------
+chrony_logrotate_config_path: "/etc/logrotate.d/chrony"
