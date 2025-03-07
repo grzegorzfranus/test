@@ -1,7 +1,9 @@
 ---
 - name: molecule | Converge
   hosts: all
+
   tasks:
-    - name: Include test role
+
+    - name: Converge | Run role
       ansible.builtin.include_role:
         name: grzegorzfranus.test
