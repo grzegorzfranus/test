@@ -1,8 +1,8 @@
 # Ansible role: test
 
-|Version|CI|License|Code style|Source|
+|Source|Version|CI|License|Code style|
 |------|-------|-------|-------|-------|
-|[![Version](https://img.shields.io/github/v/release/grzegorzfranus/test)](https://github.com/grzegorzfranus/test/releases)|[![tests](https://github.com/grzegorzfranus/test/actions/workflows/ci.yml/badge.svg)](https://github.com/grzegorzfranus/test/actions)|[![Repository License](https://img.shields.io/badge/license-apache2.0-brightgreen.svg)](LICENSE)|[![Python Black Code Style](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/python/black)|[![Source Code](https://img.shields.io/badge/source-github-blue.svg)](https://github.com/grzegorzfranus/test)|
+|[![Source Code](https://img.shields.io/badge/source-github-blue.svg)](https://github.com/grzegorzfranus/test)|[![Version](https://img.shields.io/github/v/release/grzegorzfranus/test)](https://github.com/grzegorzfranus/test/releases)|[![tests](https://github.com/grzegorzfranus/test/actions/workflows/ci.yml/badge.svg)](https://github.com/grzegorzfranus/test/actions)|[![Repository License](https://img.shields.io/badge/license-apache2.0-brightgreen.svg)](LICENSE)|[![Python Black Code Style](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/python/black)|
 
 ## Overview
 
@@ -28,9 +28,7 @@ Chronyd is a daemon for synchronisation of the system clock.
 | OS Family | Version | Status |
 |-----------|---------|---------|
 | Ubuntu | 22.04 (Jammy) | [![Ubuntu 22.04](https://img.shields.io/badge/Ubuntu%2022.04-OK-brightgreen.svg)](https://ubuntu.com) |
-| Ubuntu | 20.04 (Focal) | [![Ubuntu 20.04](https://img.shields.io/badge/Ubuntu%2020.04-OK-brightgreen.svg)](https://ubuntu.com) |
 | Debian | 12 (Bookworm) | [![Debian 12](https://img.shields.io/badge/Debian%2012-OK-brightgreen.svg)](https://www.debian.org) |
-| Debian | 11 (Bullseye) | [![Debian 11](https://img.shields.io/badge/Debian%2011-OK-brightgreen.svg)](https://www.debian.org) |
 | Rocky Linux | 9 | [![Rocky Linux 9](https://img.shields.io/badge/Rocky%20Linux%209-OK-brightgreen.svg)](https://rockylinux.org) |
 
 ### Root access
