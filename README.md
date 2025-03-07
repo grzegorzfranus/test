@@ -1,8 +1,8 @@
 # Ansible role: test
 
-|Version|CI|License|Code style|
-|------|-------|-------|-------|
-|[![Version](https://img.shields.io/github/v/release/grzegorzfranus/test)](https://github.com/grzegorzfranus/test/releases)|[![tests](https://github.com/grzegorzfranus/test/actions/workflows/ci.yml/badge.svg)](https://github.com/grzegorzfranus/test/actions)|[![Repository License](https://img.shields.io/badge/license-MIT-brightgreen.svg)](LICENSE)|[![Python Black Code Style](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/python/black)|
+|Version|CI|License|Code style|Source|
+|------|-------|-------|-------|-------|
+|[![Version](https://img.shields.io/github/v/release/grzegorzfranus/test)](https://github.com/grzegorzfranus/test/releases)|[![tests](https://github.com/grzegorzfranus/test/actions/workflows/ci.yml/badge.svg)](https://github.com/grzegorzfranus/test/actions)|[![Repository License](https://img.shields.io/badge/license-apache2.0-brightgreen.svg)](LICENSE)|[![Python Black Code Style](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/python/black)|[![Source Code](https://img.shields.io/badge/source-github-blue.svg)](https://github.com/grzegorzfranus/test)|
 
 ## Overview
 
@@ -114,7 +114,7 @@ Using the role is fairly straightforward:
 ## Licenses
 
 The
-[MIT](https://github.com/grzegorzfranus/chrony/blob/main/LICENSE)
+[Apache-2.0](https://github.com/grzegorzfranus/chrony/blob/main/LICENSE)
 License.
 
 If you have some other use in mind, contact me.
