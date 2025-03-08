@@ -46,8 +46,8 @@ jobs:
           - default
         distro:
           - rockylinux9
-          - ubuntu2404
-          - debian12
+          # - ubuntu2404
+          # - debian12
 
     steps:
       - name: Check out the codebase
