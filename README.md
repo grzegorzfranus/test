@@ -6,7 +6,7 @@
 
 ## Overview
 
-Ansible role that installs chrony as a client or server.
+Ansible role to install and configure chrony NTP client.
 
 Chronyd is a daemon for synchronisation of the system clock.
 
